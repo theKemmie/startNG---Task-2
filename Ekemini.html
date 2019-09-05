@@ -111,11 +111,7 @@ To work in a firm/ organization that can utilize and develop IT skills. </p> <br
                     </dd>
                 </dl>
             </div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+			
 		<div>
              	<p><b>PROFESSIONAL AFFLIATION<b></p>
 							<p> Member - Nigeria Computer Society (NCS) </p>
@@ -124,5 +120,66 @@ To work in a firm/ organization that can utilize and develop IT skills. </p> <br
                
                 	</div>
 			</div>
+
+	<div class="Contact">
+          <form name="ContactForm" onsubmit="return validateForm()" method="post">  
+<fieldset >
+    <legend>Contact Me Here:</legend>   
+    Name: <input type="text" name="Name" value="" minlength="4" required><br>     
+    E-mail Address: <input type="Email" name="EMail" required><br>
+    Title: <input type="text" name="Title" required><br>
+    Message: <input type="text" name="Message" maxlength="20" required><br>
+    <small style="color: red" id="message"></small>
+    <small style="color: red" id="name"></small>
+
+    <p><input type="submit" value="SUBMIT" name="Submit">        
+    </p> 
+    </fieldset>         
+</form> 
+</div>
+<script>
+    function validation(inputTxt){
+	
+		var regx = /^[a-zA-Z ]+$/;
+		var name = document.getElementById("name");
+			
+		if(inputTxt.value != '' ){
+		
+			if(inputTxt.value.length >= 4){
+			
+				if(inputTxt.value.match(regx)){
+					name.textContent = 'Good input';
+					name.style.color = "green";
+				}  
+			}else{
+				name.textContent = 'your input is less than 4 chracters';
+				name.style.color = "red";
+			}	
+		}else{
+			name.textContent = 'your input is empty';
+			name.style.color = "red";
+		}
+	
+		var regx = /^[a-zA-Z ]+$/;
+		var message = document.getElementById("message");
+			
+		if(inputTxt.value != '' ){
+		
+			if(inputTxt.value.length <= 20){
+			
+				if(inputTxt.value.match(regx)){
+					message.textContent = 'Good input';
+					message.style.color = "green";
+				}  
+			}else{
+				message.textContent = 'your input is more than 20 chracters';
+				message.style.color = "red";
+			}	
+		}else{
+			message.textContent = 'your input is empty';
+			message.style.color = "red";
+		}
+	}
+	 </script>
 </body>
 </html>
