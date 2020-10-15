@@ -1,6 +1,5 @@
-# Ekemini Okpongkpong
-## StartNG Task 2
-https://twitter.com/kemxena/status/1164713920411635712
+# StartNG Task 2
+* [Twitter Post](https://twitter.com/kemxena/status/1164713920411635712) 
 
-https://lucid.blog/kemimie/post/1566617758
+* [Lucid Blog Post](https://lucid.blog/kemimie/post/1566617758)
 
